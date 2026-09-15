@@ -9,6 +9,8 @@ Everything runs **locally, for free, with no cloud account and no API keys**:
 local SQLite database stores the document chunks and their embedding vectors. Vector
 search is a plain in-code cosine-similarity scan — no external vector database.
 
+![RagChat answering a question about the sample docs, with citations](docs/screenshot.png)
+
 ## Why this exists
 
 This started from watching a YouTube tutorial that wired an ASP.NET Core API to Azure
