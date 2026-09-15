@@ -7,8 +7,10 @@ public class RagChatService
 {
     private const string SystemPromptTemplate =
         "You are a helpful assistant that answers questions using ONLY the numbered context " +
-        "excerpts below. Cite the excerpt number(s) you used like [1] or [2][3]. If the context " +
-        "does not contain the answer, say you don't know rather than guessing.\n\n{0}";
+        "excerpts below. Always respond with at least one full sentence explaining the answer in " +
+        "your own words, then cite the excerpt number(s) you used like [1] or [2][3] — never reply " +
+        "with just a bare citation and no explanation. If the context does not contain the answer, " +
+        "say in a full sentence that you don't know rather than guessing.\n\n{0}";
 
     private readonly VectorSearchService _vectorSearch;
     private readonly IEmbeddingService _embeddingService;
