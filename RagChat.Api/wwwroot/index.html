@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>RagChat &mdash; Document Chat Demo</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <h1>RagChat</h1>
+      <p class="subtitle">Local RAG demo &mdash; Ollama + SQLite, no cloud account</p>
+
+      <div id="health" class="health">Checking Ollama&hellip;</div>
+
+      <div class="upload-box">
+        <input type="file" id="fileInput" accept=".txt,.md,.pdf,.docx" />
+        <button id="uploadBtn">Upload document</button>
+        <button id="seedBtn" class="secondary">Load sample docs</button>
+      </div>
+
+      <h2>Documents</h2>
+      <ul id="docList" class="doc-list"></ul>
+    </aside>
+
+    <main class="chat">
+      <div id="messages" class="messages"></div>
+      <form id="chatForm" class="chat-form">
+        <input id="chatInput" type="text" placeholder="Ask a question about your documents&hellip;" autocomplete="off" />
+        <button type="submit">Send</button>
+      </form>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

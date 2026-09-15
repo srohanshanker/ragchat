@@ -1,0 +1,19 @@
+## .NET
+bin/
+obj/
+out/
+*.user
+
+## Local SQLite data (generated at runtime — not something to check in)
+*.db
+*.db-shm
+*.db-wal
+
+## IDE
+.vs/
+.idea/
+*.suo
+
+## OS
+.DS_Store
+Thumbs.db
