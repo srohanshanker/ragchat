@@ -112,3 +112,7 @@ show where the answer came from.
 Services Portal" (enrollment, attendance, billing) — written in the same style as
 internal product documentation, but entirely invented for this demo. They do not
 contain any real product content.
+
+## License
+
+[MIT](LICENSE)
